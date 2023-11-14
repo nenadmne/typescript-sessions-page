@@ -30,7 +30,7 @@ export default function SessionPage() {
               })}
             </time>
             <p>
-              {/* Todo: Add button that opens "Book Session" dialog / modal */}
+              <button> Book Session </button>
             </p>
           </div>
         </header>
