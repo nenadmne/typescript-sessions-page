@@ -127,22 +127,22 @@ body {
   color: #d5cbe7;
 }
 
-#sessions-page {
+/* #sessions-page {
   width: 80%;
   max-width: 80rem;
   margin: 3rem auto;
-}
+} */
 
-#sessions-page h2 {
+/* #sessions-page h2 {
   margin: 2rem 0 0.5rem 0;
   font-size: 1.5rem;
   color: #bba4de;
-}
-
+} */
+/* 
 #sessions-page header p {
   margin: 0;
   color: #b6adc5;
-}
+} */
 
 
 #session-page {

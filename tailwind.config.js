@@ -11,6 +11,8 @@ export default {
         "lighter-purple": "#eae3f6",
         "header-pink": "#cebfe7",
         "header-link": "#c6a8f5",
+        "sessions-h": "#bba4de",
+        "sessions-h-p": "#b6adc5",
       },
       fontSize: {
         sm: "0.85rem",
