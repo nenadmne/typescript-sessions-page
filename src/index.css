@@ -83,40 +83,6 @@ body {
   text-align: right;
 }
 
-#main-header {
-  width: 80%;
-  max-width: 80rem;
-  margin: 2rem auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#main-header h1 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #cebfe7;
-}
-
-#main-header nav ul {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-}
-
-#main-header a {
-  text-decoration: none;
-  color: #c6a8f5;
-  padding: 0.25rem 0;
-  border-bottom: 2px solid transparent;
-}
-
-#main-header a:hover,
-#main-header a:active,
-#main-header a.active {
-  border-color: #c6a8f5;
-}
-
 #home-page {
   width: 80%;
   max-width: 60rem;
@@ -178,48 +144,6 @@ body {
   color: #b6adc5;
 }
 
-
-/* .session-item {
-  display: flex;
-  flex-direction: column;
-  background-color: #352e41;
-  color: white;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-} */
-
-/* .session-item img {
-  width: 100%;
-  height: 12rem;
-  object-fit: cover;
-} */
-
-/* .session-item .session-data {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
-} */
-
-/* .session-item .session-data h3,
-.session-item .session-data p {
-  margin: 0 0 0.25rem 0;
-} */
-
-/* .session-item .session-data h3 {
-  color: #c7b0ee;
-  font-size: 0.85rem;
-}
-
-.session-item .session-data p {
-  color: #eae3f6;
-  font-size: 1rem;
-} */
-
-/* .session-item .session-data .actions {
-  margin: 2rem 0 1rem 0;
-} */
 
 #session-page {
   width: 80%;

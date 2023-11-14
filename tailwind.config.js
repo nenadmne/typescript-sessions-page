@@ -9,11 +9,13 @@ export default {
       colors: {
         "light-purple": "#c7b0ee",
         "lighter-purple": "#eae3f6",
+        "header-pink": "#cebfe7",
+        "header-link": "#c6a8f5",
       },
       fontSize: {
         sm: "0.85rem",
         base: "1rem",
-        xl: "1.25rem",
+        xl: "1.5rem",
         "2xl": "2rem",
         "3xl": "3rem",
         "4xl": "4rem",
