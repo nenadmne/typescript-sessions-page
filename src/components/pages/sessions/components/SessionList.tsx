@@ -16,7 +16,7 @@ type SessionListProps = SessionListItem[];
 export default function SessionList() {
   const sessions: SessionListProps = SESSIONS;
   return (
-    <ul id="sessions-list">
+    <ul className="grid grid-cols-3 gap-12 rounded-md my-1 p-4 list-none">
       {sessions.map((item) => (
         <li key={item.id}>
           <SessionItem item={item} />
