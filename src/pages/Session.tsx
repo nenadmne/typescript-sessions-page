@@ -20,7 +20,7 @@ export default function SessionPage() {
   }
 
   return (
-    <main className="w-[80%] max-w-60rem my-12 mx-auto">
+    <main className="w-[80%] max-w-[60rem] my-12 mx-auto">
       {openModal && (
         <BookSession
           session={loadedSession}

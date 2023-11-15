@@ -17,7 +17,7 @@ function isRouterLink(
 }
 
 const buttonClass =
-  "text-inherit leading-4 text-btn-txt bg-btn-bg rounded py-2 px-6 cursor-pointer decoration-none hover:bg-btn-act active:bg-btn-act";
+  "text-inherit leading-4 text-btn-txt text-sm sm:text-base bg-btn-bg rounded py-2 px-2 sm:px-6 cursor-pointer decoration-none hover:bg-btn-act active:bg-btn-act";
 
 const buttonClassTextOnly =
   "bg-transparent text-txt-only hover:text-txt-only-act active:text-txt-only-act hover:bg-transparent active:bg-transparent";

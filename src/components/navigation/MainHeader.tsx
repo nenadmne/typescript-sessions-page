@@ -25,13 +25,15 @@ export default function MainHeader() {
       {openModal && <UpcomingSessions onClose={() => setOpenModal(false)} />}
       <header
         id="main-header"
-        className="w-[80%] max-w-7xl flex justify-between items-center my-8 mx-auto"
+        className="w-full sm:w-[80%] fixed top-0 left-0 max-w-7xl flex flex-col sm:flex-row justify-between items-center sm:my-8 sm:mx-auto p-[5%] sm:p-0 z-10"
       >
-        <h1 className="m-0 text-xl text-header-pink font-bold">ReactMentoring</h1>
-        <nav className="flex flex-row gap-6">
-          <ul className="list-none m-0 p-0 flex gap-6 items-center">
+        <h1 className="mb-4 sm:m-0 text-xl wrap text-header-pink font-bold">
+          ReactMentoring
+        </h1>
+        <nav className="w-full flex justify-end sm:justify-none flex-row gap-3 sm:gap-6">
+          <ul className="list-none m-0 p-0 flex gap-3 sm:gap-6 items-center">
             {navLinks.map((link, index) => (
-              <li key={index}>
+              <li key={index} className="text-sm sm:text-xl">
                 <NavLink
                   to={link.to}
                   className={({ isActive }) =>
@@ -46,9 +48,7 @@ export default function MainHeader() {
               </li>
             ))}
           </ul>
-          <Button onClick={() => setOpenModal(true)}>
-            Upcoming sessions
-          </Button>
+          <Button onClick={() => setOpenModal(true)}>Upcoming sessions</Button>
         </nav>
       </header>
     </>

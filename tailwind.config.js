@@ -3,6 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        sm: "500px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+      },
+
       boxShadow: {
         shadow: "0 2px 8px rgba(0, 0, 0, 0.26)",
       },
@@ -29,11 +36,11 @@ export default {
 
         "modal-bg": "#6b5e81",
         "modal-txt": "#edeaf3",
-        "backdrop":"rgba(0, 0, 0, 0.75)",
+        backdrop: "rgba(0, 0, 0, 0.75)",
 
-        "label": "#d3cedc",
+        label: "#d3cedc",
         "txt-only": "#ccb2f6",
-        "txt-only-act": "#b592ed"
+        "txt-only-act": "#b592ed",
       },
       fontSize: {
         sm: "0.85rem",
@@ -42,11 +49,6 @@ export default {
         xl: "1.5rem",
         "2xl": "2rem",
         xxl: "2.5rem",
-        "4xl": "4rem",
-        "5xl": "5rem",
-      },
-      maxWidth: {
-        "60rem": "60rem",
       },
       keyframes: {
         "fade-slide-down": {

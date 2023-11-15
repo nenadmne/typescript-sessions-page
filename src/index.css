@@ -6,11 +6,65 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+body,
+#main-header {
   background: linear-gradient(90deg, #49464f 0, #373240 100%);
+}
+
+#root {
+  flex-direction: column;
 }
 
 #home-page section:nth-child(odd) {
   flex-direction: row-reverse;
+}
+
+@media (max-width: 640px) {
+  html {
+    min-width: 375px;
+  }
+
+  #home-page section:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  #root {
+    padding: 5%;
+    position: relative;
+  }
+
+  body,
+  #root {
+    min-width: 375px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+  html {
+    min-width: 500px;
+  }
+
+  body,
+  #root {
+    width: 100%;
+  }
+
+  #root {
+    padding: 5%;
+  }
 }

@@ -31,9 +31,9 @@ export default function HomePage() {
   return (
     <main
       id="home-page"
-      className="w-[80%] max-w-[60rem] my-12 mx-auto rounded-lg text-white"
+      className="w-full sm:w-[80%] max-w-[60rem] mt-28 mb-4 sm:my-12 mx-auto rounded-lg text-white"
     >
-      <h2 className="m-0 text-xxl text-session-header">
+      <h2 className="text-xl sm:text-xxl m-0 text-session-header font-bold">
         Our Mission: Your Success
       </h2>
       {sectionsData.map((item) => (
