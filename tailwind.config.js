@@ -9,19 +9,38 @@ export default {
       colors: {
         "light-purple": "#c7b0ee",
         "lighter-purple": "#eae3f6",
+        grey: "#5a5563",
+
         "header-pink": "#cebfe7",
         "header-link": "#c6a8f5",
+
+        "session-time": "#b6adc5",
+        "session-header": "#e1d8f0",
+
         "sessions-h": "#bba4de",
         "sessions-h-p": "#b6adc5",
       },
       fontSize: {
         sm: "0.85rem",
         base: "1rem",
+        l: "1.25rem",
         xl: "1.5rem",
         "2xl": "2rem",
-        "3xl": "3rem",
+        xxl: "2.5rem",
         "4xl": "4rem",
         "5xl": "5rem",
+      },
+      maxWidth: {
+        "60rem": "60rem",
+      },
+      keyframes: {
+        "fade-slide-down": {
+          "0%": { opacity: 0, transform: "translateY(-1rem)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        "slide-down": "fade-slide-down 0.3s ease-out forwards",
       },
     },
   },
