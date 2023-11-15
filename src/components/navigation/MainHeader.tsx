@@ -25,15 +25,18 @@ export default function MainHeader() {
       {openModal && <UpcomingSessions onClose={() => setOpenModal(false)} />}
       <header
         id="main-header"
-        className="w-full sm:w-[80%] fixed top-0 left-0 max-w-7xl flex flex-col sm:flex-row justify-between items-center sm:my-8 sm:mx-auto p-[5%] sm:p-0 z-10"
+        className="w-full lg:w-[80%] fixed top-0 max-w-7xl flex flex-col sm:flex-row justify-between items-center sm:mx-auto lg:my-8 lg:mx-auto p-[5%] sm:px-[5%] lg:p-0 sm:py-8 z-10"
       >
-        <h1 className="mb-4 sm:m-0 text-xl wrap text-header-pink font-bold">
-          ReactMentoring
+        <h1 className="flex mb-4 sm:m-0 sm:w-[12rem] md:w-fit text-xl wrap text-header-pink font-bold">
+          React Mentoring
         </h1>
-        <nav className="w-full flex justify-end sm:justify-none flex-row gap-3 sm:gap-6">
-          <ul className="list-none m-0 p-0 flex gap-3 sm:gap-6 items-center">
+        <nav className="w-full md:w-fit flex justify-end sm:justify-none flex-row gap-3 md:gap-6">
+          <ul className="list-none m-0 p-0 flex gap-3 md:gap-6 items-center">
             {navLinks.map((link, index) => (
-              <li key={index} className="text-sm sm:text-xl">
+              <li
+                key={index}
+                className="text-sm sm:text-base sm:w-[4.5rem] md:w-fit"
+              >
                 <NavLink
                   to={link.to}
                   className={({ isActive }) =>

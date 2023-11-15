@@ -33,7 +33,7 @@ body,
   flex-direction: row-reverse;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 500px) {
   html {
     min-width: 375px;
   }

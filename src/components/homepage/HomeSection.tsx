@@ -9,7 +9,7 @@ type HomeSectionProps = {
 
 export default function HomeSection({ item }: HomeSectionProps) {
   return (
-    <section className="flex flex-col sm:flex-row gap-4 sm:gap-8 my-8 sm:my-12">
+    <section className="flex flex-col sm:flex-row gap-4 sm:gap-8 my-8 lg:my-12">
       <img
         src={item.imgSrc}
         alt={item.altText}
@@ -19,7 +19,7 @@ export default function HomeSection({ item }: HomeSectionProps) {
         <h3 className="m-0 text-xl text-center sm:text-left text-homepage-h">
           {item.title}
         </h3>
-        <p className="max-w-[60ch] my-4 sm:my-8 text-l text-homepage-p">
+        <p className="max-w-[60ch] my-4 lg:my-8 text-l text-homepage-p">
           {item.description}
         </p>
       </div>
