@@ -1,7 +1,7 @@
-import studentsImg from "../../../assets/students.jpg";
-import listImg from "../../../assets/list.jpg";
-import certificateImg from "../../../assets/certificate.jpg";
-import HomeSection from "./components/HomeSection";
+import HomeSection from "../components/homepage/HomeSection";
+import studentsImg from "../assets/students.jpg";
+import listImg from "../assets/list.jpg";
+import certificateImg from "../assets/certificate.jpg";
 
 export default function HomePage() {
   const sectionsData = [

@@ -1,5 +1,5 @@
-import SessionsHeader from "./components/SessionsHeader.tsx";
-import SessionList from "./components/SessionList.tsx";
+import SessionsHeader from "../components/sessions/SessionsHeader.tsx";
+import SessionList from "../components/sessions/SessionList.tsx";
 
 export default function SessionsPage() {
   return (
