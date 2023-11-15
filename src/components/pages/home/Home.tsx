@@ -29,8 +29,13 @@ export default function HomePage() {
   ];
 
   return (
-    <main id="home-page">
-      <h2>Our Mission: Your Success</h2>
+    <main
+      id="home-page"
+      className="w-[80%] max-w-[60rem] my-12 mx-auto rounded-lg text-white"
+    >
+      <h2 className="m-0 text-xxl text-session-header">
+        Our Mission: Your Success
+      </h2>
       {sectionsData.map((item) => (
         <HomeSection key={item.title} item={item} />
       ))}

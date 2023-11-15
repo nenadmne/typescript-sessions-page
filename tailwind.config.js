@@ -14,6 +14,9 @@ export default {
         "header-pink": "#cebfe7",
         "header-link": "#c6a8f5",
 
+        "homepage-h": "#c7b0ee",
+        "homepage-p": "#d5cbe7",
+
         "session-time": "#b6adc5",
         "session-header": "#e1d8f0",
 
