@@ -9,14 +9,14 @@ export default function SessionPage() {
 
   if (!loadedSession) {
     return (
-      <main id="session-page">
+      <main className="w-[80%] max-w-60rem my-12 mx-auto">
         <p>No session found!</p>
       </main>
     );
   }
 
   return (
-    <main id="session-page" className="w-[80%] max-w-60rem my-12 mx-auto">
+    <main className="w-[80%] max-w-60rem my-12 mx-auto">
       <article>
         <header className="flex gap-6">
           <img
