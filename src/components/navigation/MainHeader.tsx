@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Button from "../UI/Button";
 
 export default function MainHeader() {
   const navLinks = [
@@ -22,7 +23,7 @@ export default function MainHeader() {
         className="w-[80%] max-w-7xl flex justify-between items-center my-8 mx-auto"
       >
         <h1 className="m-0 text-xl text-header-pink">ReactMentoring</h1>
-        <nav>
+        <nav className="flex flex-row gap-6">
           <ul className="list-none m-0 p-0 flex gap-6 items-center">
             {navLinks.map((link, index) => (
               <li key={index}>
@@ -40,6 +41,7 @@ export default function MainHeader() {
               </li>
             ))}
           </ul>
+          <Button> Upcoming sessions </Button>
         </nav>
       </header>
     </>

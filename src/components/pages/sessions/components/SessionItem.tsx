@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Button from "../../../UI/Button";
 
 type SessionItemProps = {
   item: {
@@ -20,7 +20,7 @@ export default function SessionItem({ item }: SessionItemProps) {
           <p className="mb-1 text-lighter-purple text-base">{summary}</p>
         </div>
         <p className="mt-8 mb-4 text-right">
-          <Link to={id}>Learn More</Link>
+          <Button to={id}>Learn More</Button>
         </p>
       </div>
     </article>

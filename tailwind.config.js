@@ -22,6 +22,10 @@ export default {
 
         "sessions-h": "#bba4de",
         "sessions-h-p": "#b6adc5",
+
+        "btn-bg": "#b68ef7",
+        "btn-txt": "#0a0218",
+        "btn-act": "#a16cf7"
       },
       fontSize: {
         sm: "0.85rem",

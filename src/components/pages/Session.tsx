@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { SESSIONS } from "../../dummy-sessions.ts";
+import Button from "../UI/Button.tsx";
 
 export default function SessionPage() {
   const params = useParams<{ id: string }>();
@@ -38,8 +39,8 @@ export default function SessionPage() {
                 year: "numeric",
               })}
             </time>
-            <p>
-              <button> Book Session </button>
+            <p className="mt-2">
+              <Button> Book Session </Button>
             </p>
           </div>
         </header>
