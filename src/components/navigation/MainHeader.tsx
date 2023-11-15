@@ -25,7 +25,7 @@ export default function MainHeader() {
       {openModal && <UpcomingSessions onClose={() => setOpenModal(false)} />}
       <header
         id="main-header"
-        className="w-full lg:w-[80%] fixed top-0 max-w-7xl flex flex-col sm:flex-row justify-between items-center sm:mx-auto lg:my-8 lg:mx-auto p-[5%] sm:px-[5%] lg:p-0 sm:py-8 z-10"
+        className="w-full lg:w-[80%] fixed top-0 max-w-7xl flex flex-col sm:flex-row justify-between items-center sm:mx-auto lg:m-0 lg:mx-auto p-[5%] sm:py-4 sm:px-[5%] lg:py-8 lg:px-0 z-10"
       >
         <h1 className="flex mb-4 sm:m-0 sm:w-[12rem] md:w-fit text-xl wrap text-header-pink font-bold">
           React Mentoring
