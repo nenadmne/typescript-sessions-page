@@ -25,7 +25,15 @@ export default {
 
         "btn-bg": "#b68ef7",
         "btn-txt": "#0a0218",
-        "btn-act": "#a16cf7"
+        "btn-act": "#a16cf7",
+
+        "modal-bg": "#6b5e81",
+        "modal-txt": "#edeaf3",
+        "backdrop":"rgba(0, 0, 0, 0.75)",
+
+        "label": "#d3cedc",
+        "txt-only": "#ccb2f6",
+        "txt-only-act": "#b592ed"
       },
       fontSize: {
         sm: "0.85rem",

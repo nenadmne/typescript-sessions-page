@@ -1,5 +1,5 @@
-import { forwardRef, useImperativeHandle, useRef } from 'react';
-import { createPortal } from 'react-dom';
+import { forwardRef, useImperativeHandle, useRef } from "react";
+import { createPortal } from "react-dom";
 
 // This type is used with `forwardRef` to ensure that the `Modal` component can be used with `useImperativeHandle` to expose a `open` method
 export type ModalHandle = {
@@ -11,7 +11,7 @@ type ModalProps = {
   onClose: () => void; // The onClose function prop is used to propagate the default "close" event that can be triggered by <dialog> (for example, when the ESC key is pressed)
 };
 
-const Modal = forwardRef<ModalHandle, ModalProps>(function Modal (
+const Modal = forwardRef<ModalHandle, ModalProps>(function Modal(
   { children, onClose },
   ref
 ) {
@@ -30,10 +30,14 @@ const Modal = forwardRef<ModalHandle, ModalProps>(function Modal (
 
   // Below, the onClose prop is set on <dialog> to handle the case that the user closes the modal via a built-in mechanism (ESC key)
   return createPortal(
-    <dialog ref={dialog} className="modal" onClose={onClose}>
+    <dialog
+      ref={dialog}
+      className="w-[90%] max-w-[35rem] bg-modal-bg text-modal-text rounded-lg p-4 backdrop:bg-backdrop"
+      onClose={onClose}
+    >
       {children}
     </dialog>,
-    document.getElementById('modal-root')!
+    document.getElementById("modal-root")!
   );
 });
 

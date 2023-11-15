@@ -19,12 +19,15 @@ function isRouterLink(
 const buttonClass =
   "text-inherit leading-4 text-btn-txt bg-btn-bg rounded py-2 px-6 cursor-pointer decoration-none hover:bg-btn-act active:bg-btn-act";
 
+const buttonClassTextOnly =
+  "bg-transparent text-txt-only hover:text-txt-only-act active:text-txt-only-act hover:bg-transparent active:bg-transparent";
+
 export default function Button(props: ButtonProps | ButtonLinkProps) {
   if (isRouterLink(props)) {
     const { children, textOnly, ...otherProps } = props;
     return (
       <Link
-        className={`${buttonClass} ${textOnly ? "button--text-only" : ""}`}
+        className={`${buttonClass} ${textOnly ? `${buttonClassTextOnly}` : ""}`}
         {...otherProps}
       >
         {children}
@@ -36,7 +39,7 @@ export default function Button(props: ButtonProps | ButtonLinkProps) {
 
   return (
     <button
-      className={`${buttonClass} ${textOnly ? "button--text-only" : ""}`}
+      className={`${buttonClass} ${textOnly ? `${buttonClassTextOnly}` : ""}`}
       {...otherProps}
     >
       {children}

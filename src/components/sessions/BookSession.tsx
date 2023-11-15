@@ -7,14 +7,13 @@ import { Session, useSessionsContext } from "../../store/sessions-context.tsx";
 
 type BookSessionProps = {
   session: Session;
-  onClose: () => void; // onDone will "tell" the parent component that the BookSession component should be removed from the DOM
+  onClose: () => void;
 };
 
 export default function BookSession({ session, onClose }: BookSessionProps) {
   const modal = useRef<ModalHandle>(null);
   const sessionsCtx = useSessionsContext();
 
-  // useEffect is used to open the Modal via its exposed `open` method when the component is mounted
   useEffect(() => {
     if (modal.current) {
       modal.current.open();
@@ -33,11 +32,11 @@ export default function BookSession({ session, onClose }: BookSessionProps) {
 
   return (
     <Modal ref={modal} onClose={onClose}>
-      <h2>Book Session</h2>
+      <h2 className="mb-2 text-xl text-session-header">Book Session</h2>
       <form onSubmit={handleSubmit}>
         <Input label="Your name" id="name" name="name" type="text" />
         <Input label="Your email" id="email" name="email" type="email" />
-        <p className="actions">
+        <p className="text-right">
           <Button type="button" textOnly onClick={onClose}>
             Cancel
           </Button>
