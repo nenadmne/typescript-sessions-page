@@ -18,7 +18,7 @@ export default function Input({ label, id, ...props }: InputProps) {
       <input
         id={id}
         {...props}
-        className="w-full max-w-[35rem] text-l leading-[1.25rem] border-solid border-[1px] border-label rounded p-2"
+        className="w-full max-w-[35rem] text-base md:text-l leading-[1rem] md:leading-[1.25rem] border-solid border-[1px] border-label rounded p-2"
       />
     </div>
   );
